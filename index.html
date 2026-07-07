@@ -21,9 +21,12 @@ color:white;
 line-height:1.6;
 }
 header{
-padding:120px 20px;
-text-align:center;
-
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:20px;
 background:
 linear-gradient(
 rgba(15,23,42,0.75),
@@ -125,9 +128,8 @@ transform:translateY(-10px);
 box-shadow:0 15px 35px rgba(96,165,250,0.3);
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
+
+
 
 .card h3{
 margin-bottom:10px;
@@ -152,35 +154,26 @@ cursor:pointer;
 transform:scale(1.08);
 background:#3b82f6;
 }
-.contact{input,
-textarea{
+.contact{
+text-align:center;
+}
 
+input,
+textarea{
 width:100%;
 padding:15px;
-
 background:#1e293b;
-
 border:1px solid #334155;
-
 border-radius:10px;
-
 color:white;
-
 font-size:16px;
-
 outline:none;
-
 }
 
 input:focus,
 textarea:focus{
-
 border-color:#60a5fa;
-
 box-shadow:0 0 10px rgba(96,165,250,0.3);
-
-}
-text-align:center;
 }
 nav{
 background:rgba(2,6,23,0.9);
@@ -286,6 +279,8 @@ transform:translateY(-5px) scale(1.1);
 </div>
 
 </header>
+
+<section id="about">
 <div class="container">
 <h2>About Me</h2>
 <p class="about">
