@@ -152,7 +152,34 @@ cursor:pointer;
 transform:scale(1.08);
 background:#3b82f6;
 }
-.contact{
+.contact{input,
+textarea{
+
+width:100%;
+padding:15px;
+
+background:#1e293b;
+
+border:1px solid #334155;
+
+border-radius:10px;
+
+color:white;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+input:focus,
+textarea:focus{
+
+border-color:#60a5fa;
+
+box-shadow:0 0 10px rgba(96,165,250,0.3);
+
+}
 text-align:center;
 }
 nav{
@@ -350,19 +377,52 @@ I am Saksham, founder of Saksham Digital. I help businesses, startups and entrep
 </section>
   
 <section id="contact">
-<div class="container contact">
+<div class="container">
+
 <h2>Contact Me</h2>
-<p>Email: sakshamdigital.work@gmail.com</p>
-<p>WhatsApp: +91 9301257563</p>
+
+<form style="max-width:600px;margin:auto;display:flex;flex-direction:column;gap:20px;">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<textarea
+rows="6"
+placeholder="Your Message"
+required></textarea>
+
+<button class="btn" type="submit">
+Send Message
+</button>
+
+</form>
+
+<div style="margin-top:40px;text-align:center;">
+
+<p>📧 sakshamdigital.work@gmail.com</p>
+
+<p>📱 +91 9301257563</p>
+
 <p>
-Instagram:
-<a href="https://instagram.com/sakshamsa5" target="_blank" style="color:#60a5fa;">
+📷
+<a href="https://instagram.com/sakshamsa5"
+target="_blank"
+style="color:#60a5fa;">
 @sakshamsa5
 </a>
 </p>
+
+</div>
+
 </div>
 </section>
-
 <footer>
 <p>© 2026 Saksham Digital. All Rights Reserved.</p>
 </footer>
